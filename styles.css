@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #D6EAF8; /* Soft blue background */
+}
+
+h1 {
+    text-align: center;
+    color: #212F3D; /* Charcoal for strong heading contrast */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    background-color: #A9DFBF; /* Mint green accent */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+
+input, textarea {
+    background-color: #F7DC6F; /* Gold for input fields */
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #212F3D; /* Charcoal text */
+    border: 1px solid #B39134;
+    border-radius: 4px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #408EC6; /* Subtle blue for placeholders */
+    opacity: 1;
+}
+
+button {
+    background-color: #F1948A; /* Coral button */
+    color: #212F3D; /* Charcoal text for contrast */
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #F7DC6F; /* Gold on hover */
+}
+
+#posts {
+    background-color: #FFFFFF; /* White background for posts */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+}
+
+.post {
+    border: 1px solid #A9DFBF;
+    background-color: #FDF6E3; /* Light beige for post card */
+    margin-bottom: 16px;
+    padding: 16px;
+    border-radius: 6px;
+}
+
+.post h3 {
+    margin: 0 0 10px 0;
+    color: #3E2723; /* Dark brown for post titles */
+}
+
+.post p {
+    color: #212F3D; /* Charcoal for post content */
+}
+
+.post button {
+    background-color: #7A2048; /* Burgundy for delete */
+    color: #FFFFFF;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+.post button:hover {
+    background-color: #F1948A; /* Coral on hover */
+}
+body.dark-mode {
+    background-color: #181a20; /* Dark blue-gray */
+    color: #f4f4f4; /* Light text */
+}
+
+body.dark-mode h1,
+body.dark-mode .post h3 {
+    color: #f7dc6f; /* Gold for headings */
+}
+
+body.dark-mode form {
+    background-color: #222831;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #393e46;
+    color: #f4f4f4;
+    border: 1px solid #f7dc6f;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #a9dfbf;
+}
+
+body.dark-mode button {
+    background-color: #25be7e;
+    color: #181a20;
+}
+
+body.dark-mode #posts {
+    background-color: #23272f;
+}
+
+body.dark-mode .post {
+    background-color: #222831;
+    border: 1px solid #393e46;
+}
+
+body.dark-mode .post button {
+    background-color: #7a2048;
+    color: #fff;
+}
